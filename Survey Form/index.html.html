@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <link rel="stylesheet" href="styles.css">
+  <title>Valorant Tournament Registration Form</title>
+</head>
+<body>
+  <h1 id="title">Valorant Tournament Registration Form</h1>
+  <p id="description">Please fill out this form with the required information</p>
+
+  <form id="survey-form">
+    <!-- Textboxes -->
+    <div class="textbox-group">
+      <label id="name-label" for="name">Enter Your Name:
+        <input required id="name" type="text" placeholder="e.g. Stephenn Avena"/>
+      </label>
+      <label id="email-label" for="email">Enter Your Email:
+        <input required id="email" type="email" placeholder="e.g. steph@example.com"/>
+      </label>
+      <label id="number-label" for="number">Enter Your Age (optional):
+        <input id="number" type="number" min="1" max="120" placeholder="e.g. 27"/>
+      </label>
+    </div>
+
+    <!-- Dropdowns -->
+    <div class="dropdown-group"> 
+      <label for="dropdown">Select current employment status:
+        <select id="dropdown">
+          <option value="" disabled selected>Select an option</option> 
+          <option value="employed">Employed</option>
+          <option value="self-employed">Self-employed</option>
+          <option value="unemployed">Unemployed</option>
+          <option value="student">Student</option>
+          <option value="retired">Retired</option>
+          <option value="others">Others</option>
+        </select>
+      </label>
+    </div>
+
+    <!-- Radio Buttons -->
+<legend>Competitive Experience Level:</legend>
+<div class="radio-group">
+  <label for="beginner-account">
+    Beginner
+    <input id="beginner-account" type="radio" name="experience-level" value="beginner" checked />
+  </label>
+  <label for="experienced-account">
+    Experienced
+    <input id="experienced-account" type="radio" name="experience-level" value="experienced" />
+  </label>
+  <label for="professional-account">
+    Professional
+    <input id="professional-account" type="radio" name="experience-level" value="professional" />
+  </label>
+</div>
+
+
+    <!-- Checkboxes -->
+<legend class="availability">Availability for Tournament Dates (Check all that apply):</legend>
+<div class="checkbox-group">
+  <label for="checkbox-weekdays">
+    Weekdays
+    <input id="checkbox-weekdays" type="checkbox" value="weekdays"/>
+  </label>
+  <label for="checkbox-weekends">
+    Weekends
+    <input id="checkbox-weekends" type="checkbox" value="weekends"/>
+  </label>
+  <label for="checkbox-evenings">
+    Evenings
+    <input id="checkbox-evenings" type="checkbox" value="evenings"/>
+  </label>
+  <label for="checkbox-flexible">
+    Flexible
+    <input id="checkbox-flexible" type="checkbox" value="flexible"/>
+  </label>
+</div>
+
+
+    <!-- Textarea for comments -->
+    <div class="textarea-group">
+      <label for="comments">Additional Comments:</label>
+      <textarea id="comments" name="comments" placeholder="Enter your comments here..."></textarea>
+    </div>
+
+    <!-- Submit button -->
+    <div class="submit-group">
+      <button id="submit" type="submit">Submit</button>
+    </div>
+  </form>
+</body>
+</html>
